@@ -1,5 +1,3 @@
-#include <iostream>
-using namespace std;
 /*
 Một xâu nhị phân độ dài n (n < 10) được gọi là thuận nghịch hay đối xứng nếu đảo ngược xâu nhị phân đó ta vẫn nhận được chính nó.
 Cho số tự nhiên n (n nhập từ bàn phím).
@@ -14,6 +12,10 @@ Input  | Output
        | 1 0 0 1
        | 1 1 1 1
 */
+#include <iostream>
+#include <string>
+using namespace std;
+
 bool odd;
 
 void print(string s) {
