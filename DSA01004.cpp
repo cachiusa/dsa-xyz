@@ -28,21 +28,23 @@ void print(subset s) {
     cout << " ";
 }
 
+subset subset_add(subset ss, int n) {
+    ss.push_back(n);
+    return ss;
+}
+
 void gen(int series_end, int subset_len, subset s) {
     if (s.size() == subset_len) {
         print(s);
         return;
     }
-    int subset_end;
-    if (s.empty()) {
-        subset_end = 0;
-    } else {
-        subset_end = s.back();
-    }
-    for (int next_num = subset_end + 1; next_num <= series_end; next_num++) {
-        s.push_back(next_num);
-        gen(series_end, subset_len, s);
-        s.pop_back();
+    int subset_end = (!s.empty()) ? s.back() : 0;
+    for (
+        int next_num = subset_end + 1;
+        next_num <= series_end;
+        next_num++
+    ) {
+        gen(series_end, subset_len, subset_add(s, next_num));
     }
 }
 
