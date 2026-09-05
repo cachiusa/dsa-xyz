@@ -1,0 +1,6 @@
+Cho trước ba số thực a, b và c. Xét mệnh đề p = “Phương trình ax^4 + bx^2 + c = 0 có ít nhất một nghiệm thực”.
+
+Bạn có thể bê nguyên bài TRR1_1010 để giải bài này.
+
+Khi đặt y = x^2, chỉ cần y1/y2 >= 0 thì x^2 cũng >=0
+--> x >= 0

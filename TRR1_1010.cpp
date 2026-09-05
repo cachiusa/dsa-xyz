@@ -1,3 +1,6 @@
+/*
+    Cho trước ba số thực a, b và c. Xét mệnh đề p = “Phương trình ax^2 + bx + c = 0 có ít nhất một nghiệm thực dương”.
+ */
 #include <iostream>
 #include <cmath>
 using namespace std;
