@@ -27,11 +27,7 @@ int test() {
     float x2 = 0;
     x1 = (-b + sqrt(d)) / 2.0*a;
     x2 = (-b - sqrt(d)) / 2.0*a;
-    if (x1 > 0 || x2 > 0) {
-        return 1;
-    } else {
-        return 0;
-    }
+    return (x1 > 0 || x2 > 0) ? 1 : 0;
 }
 
 int main() {
